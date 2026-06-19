@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Theia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --blush: #FDE8E0;
+            --blush-deep: #F5D5C8;
+            --gold: #C9A84C;
+            --ink: #1A1A1A;
+            --ink-light: #6B6B6B;
+            --white: #FFFFFF;
+        }
+
+        body {
+            background-color: var(--blush);
+            color: var(--ink);
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 300;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        main {
+            flex: 1;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 300;
+            font-size: 2.4rem;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.6rem;
+        }
+
+        .last-updated {
+            font-size: 0.85rem;
+            color: var(--ink-light);
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 400;
+            font-size: 1.4rem;
+            margin-top: 2.4rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+            color: var(--ink);
+        }
+
+        strong {
+            font-weight: 500;
+        }
+
+        a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: var(--ink-light);
+        }
+
+        footer {
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid var(--blush-deep);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--ink-light);
+            font-size: 0.85rem;
+            letter-spacing: 0.02em;
+        }
+
+        .footer-note {
+            font-size: 0.8rem;
+            color: var(--ink-light);
+            letter-spacing: 0.03em;
+        }
+
+        .footer-note span {
+            display: block;
+            margin-top: 0.4rem;
+        }
+
+        @media (max-width: 480px) {
+            main {
+                padding: 2.5rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <a href="/" class="back-link">&larr; Back to Theia</a>
+
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: June 2026</p>
+
+        <p>Theia ("we", "our", "the app") is an inventory management application for independent jewelry dealers. We take your privacy seriously. This policy explains what data we collect, why we collect it, and how we protect it.</p>
+
+        <h2>What we collect</h2>
+
+        <p><strong>Account information.</strong> Your email address and password, used to create and secure your account. Authentication is handled by Supabase with industry-standard encryption.</p>
+
+        <p><strong>Inventory data.</strong> Item descriptions, categories, eras, brands, metals, stones, prices, dates, notes, and any other details you enter about your inventory. This is the core data you create and manage in the app.</p>
+
+        <p><strong>Photos.</strong> Images you take or upload of inventory items. These are stored securely in our cloud storage and are only accessible to your account.</p>
+
+        <p><strong>Contacts.</strong> Names, phone numbers, email addresses, and Instagram handles of buyers, sellers, and partners that you choose to add to your contact list.</p>
+
+        <p><strong>Financial data.</strong> Purchase prices, sale prices, trade prices, costs, invoices, and ownership split information that you enter. We do not connect to your bank accounts or payment processors.</p>
+
+        <p><strong>Voice recordings.</strong> When you use the voice input feature, audio is recorded temporarily on your device, sent to OpenAI's Whisper service for transcription, and then immediately deleted. We do not store your voice recordings. Only the resulting text transcription is saved as part of your item data.</p>
+
+        <h2>How we use your data</h2>
+
+        <p>Your data is used solely to provide the Theia service to you. Specifically, we use it to display your inventory, generate invoices, calculate dashboard figures, and power search and filtering. We do not use your data for advertising, profiling, or any purpose beyond operating the app for your benefit.</p>
+
+        <h2>Third-party services</h2>
+
+        <p><strong>Supabase.</strong> Our backend infrastructure provider. Stores your account data, inventory data, photos, and contacts. Data is encrypted at rest and in transit.</p>
+
+        <p><strong>OpenAI.</strong> Powers two features: (1) AI-assisted item identification from photos using GPT-4o vision, and (2) voice transcription using Whisper. When you use these features, your photos or voice audio are sent to OpenAI for processing. OpenAI's API data usage policy states that data sent via the API is not used to train their models. No data is sent to OpenAI unless you actively use the camera intake or voice input features.</p>
+
+        <p>We do not sell, share, or provide your data to any other third parties.</p>
+
+        <h2>Data storage and security</h2>
+
+        <p>All data is stored on Supabase's infrastructure with row-level security policies ensuring that you can only access your own data. All connections use TLS encryption. Passwords are hashed and never stored in plain text. Photos and documents are stored in private cloud storage buckets accessible only to your authenticated account.</p>
+
+        <h2>Your rights</h2>
+
+        <p><strong>Access.</strong> You can view all data associated with your account at any time within the app.</p>
+
+        <p><strong>Correction.</strong> You can edit or update any of your data at any time.</p>
+
+        <p><strong>Deletion.</strong> You can delete individual items, contacts, and transactions at any time. To delete your entire account and all associated data, contact us at the email below and we will process your request within 30 days.</p>
+
+        <p><strong>Export.</strong> We are working on a data export feature. In the meantime, contact us and we will provide your data in a standard format within 30 days.</p>
+
+        <h2>Data retention</h2>
+
+        <p>We retain your data for as long as your account is active. If you delete your account, all associated data is permanently removed within 30 days. Voice recordings are deleted immediately after transcription and are never retained.</p>
+
+        <h2>Children's privacy</h2>
+
+        <p>Theia is not intended for use by anyone under the age of 18. We do not knowingly collect data from children.</p>
+
+        <h2>Changes to this policy</h2>
+
+        <p>We may update this policy from time to time. If we make material changes, we will notify you via the app or by email. The date at the top of this page indicates when the policy was last revised.</p>
+
+        <h2>Contact us</h2>
+
+        <p>If you have questions about this privacy policy or your data, contact us at <a href="mailto:hello@theia.app">hello@theia.app</a>.</p>
+    </main>
+
+    <footer>
+        <nav class="footer-links">
+            <a href="mailto:hello@theia.app">Contact Us</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+        </nav>
+        <p class="footer-note">
+            Built in London for the trade.
+            <span>&copy; 2026 Theia</span>
+        </p>
+    </footer>
+
+</body>
+</html>
